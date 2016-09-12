@@ -1,6 +1,8 @@
 "use strict";
 var platform_browser_dynamic_1 = require('@angular/platform-browser-dynamic');
-// import { ROUTER_PROVIDERS } from '@angular/router-deprecated'
-var app_module_1 = require('./app.module');
-platform_browser_dynamic_1.platformBrowserDynamic().bootstrapModule(app_module_1.AppModule);
+var app_routes_1 = require('./app.routes');
+var app_component_1 = require('./app.component');
+platform_browser_dynamic_1.bootstrap(app_component_1.AppComponent, [
+    app_routes_1.APP_ROUTER_PROVIDERS
+]);
 //# sourceMappingURL=main.js.map
